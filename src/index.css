@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .navbar {
+    @apply w-full h-16 flex justify-center items-center fixed;
+  }
+  .navbar-container {
+    @apply flex justify-between items-center container;
+  }
+  .brand {
+    @apply text-2xl;
+  }
+  .navbar-menu {
+    @apply flex gap-x-24 uppercase;
+  }
+  .navbar-menu > li {
+    @apply text-xl inline-block link text-white;
+  }
+  .btn {
+    @apply h-10 px-8 w-fit border rounded-lg block transition-all duration-500;
+  }
+  .link {
+    @apply cursor-pointer hover:opacity-80 hover:border-b hover:border-white;
+  }
+  .link-underline {
+    @apply bg-white w-full h-[1px];
+  }
+  .section {
+    @apply container;
+  }
+}
